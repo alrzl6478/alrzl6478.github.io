@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>'네이버 메모' 구현</title>
+    
+    <link rel="stylesheet" href="assets/bxslider/jquery.bxslider.min.css" />
+    <link rel="stylesheet" href="css/memo.css" />
+    
+    <script src="assets/jquery-latest.min.js"></script>
+    <script src="assets/bxslider/jquery.bxslider.min.js"></script>
+    <script src="js/memo.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <!-- header 좌우 pos -->
+            <h1 class="h_header clearfix">
+                <a href="#" class="naver">네이버</a>
+                <a href="#" class="memo">메모</a>
+            </h1>
+            
+            <div class="logingnb_wrap">
+                <ul class="logingnb" clearfix>
+                    <li class="btn_logingnb"><a href="#">로그인</a></li>
+                    <li class="btn_all"><a href="#">전체보기</a></li>
+                </ul>
+            </div>
+            
+            <!-- center gnb -->
+            <div class="_cen">
+                <div class="gnb_wrap">
+                    <ul class="gnb clearfix">
+                        <li class="me"><a href="#">네이버미</a></li>
+                        <li class="mail"><a href="#">메일</a></li>
+                        <li class="calendar"><a href="#">캘린더</a></li>
+                        <li class="memo"><a href="#">메모</a></li>
+                        <li class="contact"><a href="#">주소록</a></li>
+                        <li class="ndrive"><a href="#">엔드라이브</a></li>
+                        <li class="office"><a href="#">오피스</a></li>
+                        <li class="moneybook"><a href="#">가계부</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- body -->
+        <div class="body clearfix">
+            <div class="_cen clearfix">
+                <!-- content -->
+                <div class="content_wrap">
+                    <!-- memotitle -->
+                    <div class="h_content_wrap">
+                        <h1 class="h_content">네이버 메모</h1>
+                    </div>
+                    
+                    <!-- slider -->
+                    <div class="slider_wrap">
+                        <ul class="mainSlider">
+                            <li><img src="images/login_cont_banner1_160608.jpg" /></li>
+                            <li><img src="images/login_cont_banner2_160608.jpg" /></li>
+                            <li><img src="images/login_cont_banner3_160608.jpg" /></li>
+                            <li><img src="images/login_cont_banner4_160608.jpg" /></li>
+                            <li><img src="images/login_cont_banner5_160608.jpg" /></li>
+                        </ul>
+                        
+                        <div class="mainControl">
+                            <a href="#" class="main_prev">prev</a>
+                            <a href="#" class="main_next">next</a>
+                        </div>
+                        
+                        <div id="mainPager">
+                            <a href="#" data-slide-index="0">0</a>
+                            <a href="#" data-slide-index="1">1</a>
+                            <a href="#" data-slide-index="2">2</a>
+                            <a href="#" data-slide-index="3">3</a>
+                            <a href="#" data-slide-index="4">4</a>
+                            <a href="#" data-slide-index="5">5</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 하단 -->
+                    <div class="downArea_wrap">
+                        <ul class="downArea clearfix">
+                            <li class="dw dw_app"><a href="#">다운로드하기</a></li>
+                            <li class="dw dw_pc"><a href="#">체험하기</a></li>
+                            <li class="dw dw_web"><a href="#">기록하기</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- aside -->
+                <div class="aside_wrap">
+                    <!-- login -->
+                    <div class="login_wrap">
+                        <p class="login_txt">기록이 필요할 땐 언제나, 네이버 메모</p>
+                        <a href="#" class="btn_login"><span>naver login</span></a>
+                        
+                        <span class="find clearfix">
+                            <a href="#" class="find_id">아이디 찾기</a>
+                            <a href="#" class="find_pw">비밀번호 찾기</a>
+                            <a href="#" class="join">회원가입</a>
+                        </span>
+                    </div>
+                    
+                    <!-- notice -->
+                    <div class="notice_wrap">
+                        <ul class="notice">
+                            <li><a href="#">[안내] 1.x 버전 앱 서비스 종료 (17/7/5)</a></li>
+                            <li><a href="#">[개선] 네이버 메모앱 3.0 버전 오픈</a></li>
+                            <li><a href="#">[안내] 모바일앱 iOS 최소 지원버전 변경</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- comment -->
+                    <div class="comment_wrap">
+                        <h3 class="h_comment"><span>메모를 말하다</span></h3>
+                        
+                        <div class="commSlider_wrap">
+                            <ul class="commSlider">
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"폰에서도, PC에서도 네이버 메모만 있다면 언제나 기록할 수 있어요."</p>
+                                </li>
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"직장인이라면 필수! 일하면서 PC에서 쓰고 이동할 땐 폰으로 찾아보고!"</p>
+                                </li>
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"폰은 새로 바꿔도 네이버 메모앱 덕분에 내 메모들은 그대로~"</p>
+                                </li>
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"여러 곳에서 메모해도, 네이버 메모 하나로 동기화되니 정말 유용해요!"</p>
+                                </li>
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"많은 메모들을 폴더로 분류하니 편리해요. 메모 많이 한다면 강추!"</p>
+                                </li>
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"알록달록 색깔 별로 구분할 수 있어서,어떤 메모가 중요한지 한 눈에 척!"</p>
+                                </li>
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"예쁜 옷 사진 첨부하고 쇼핑몰 이름도 같이 메모하니 나중에 찾기 편해요."</p>
+                                </li>
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"매일 일기를 쓰고 암호로 잠글 수 있으니까 비밀 다이어리같은 느낌이에요."</p>
+                                </li>
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"오늘 장보기 리스트를 위젯으로 꺼내놓고 퇴근길에 홈화면에서 바로 봐요."</p>
+                                </li>
+                                <li>
+                                    <span class="point">말풍선</span>
+                                    <p class="comm_txt">"넓은 PC 화면에서 메모를 한 눈에 펼쳐 놓고 시원하게 볼 수 있어 좋아요."</p>
+                                </li>
+                            </ul>
+                            
+                            <div class="commControl clearfix">
+                                <a href="#" class="comm_prev">prev</a>
+                                <a href="#" class="comm_next">next</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- banner top -->
+                    <div class="banner1">
+                        <a href="#"><img src="images/login_banner_s_1704.png" alt=""></a>
+                    </div>
+                    
+                    <!-- banner bottom -->
+                    <div class="banner2">
+                        <a href="#"><img src="images/memo_banner_1704.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        <div class="footer">
+            <div class="_cen">
+                <div class="address">
+                    Copyright ⓒ <strong>NAVER Corp.</strong> All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
